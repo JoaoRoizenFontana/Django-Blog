@@ -7,18 +7,19 @@
 {%block content %}
     
 {%if user.is_authenticated%}
+    {% if user.id == post.author.id%}
+        <h2>Deletar Receita</h2>
+        <br/><br/>
+        <h4>Deletar: {{post.title}}</h4>
 
-    <h2>Deletar Receita</h2>
-    <br/><br/>
-    <h4>Deletar: {{post.title}}</h4>
-
-    <br/>
-    <div class="form-group">
-        <form method="POST">
-            {% csrf_token %}
-            <strong>Tem certeza?</strong><br/><br/>
-            <button class="btn btn-secondary">Deletar</button>
-    </div>
+        <br/>
+        <div class="form-group">
+            <form method="POST">
+                {% csrf_token %}
+                <strong>Tem certeza?</strong><br/><br/>
+                <button class="btn btn-secondary">Deletar</button>
+        </div>
+    {% endif %}
 
 {% endif %}
 
