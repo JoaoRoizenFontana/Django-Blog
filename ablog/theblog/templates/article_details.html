@@ -15,13 +15,29 @@
         <small><a href="{%url 'delete_post' post.pk%}">Deletar</a></small>
     {% endif %}
 {% endif %}
-</br>
+<br/>
 <hr>
 <br/>
 {{post.body}}
 
+<br/><br/><br/>
+<h5>Comentarios</h5>
+
+{%if not post.comments.all%}
+    Sem comentarios ainda...<a href="{%url 'add_comment' post.pk%}">Adicionar comentario</a>
+{% else %}
+    <a href="{%url 'add_comment' post.pk%}">Adicionar comentario</a>
+    <br/>
+    {%for comment in post.comments.all%}
+        <br/>
+        <strong>{{comment.name}}</strong>
+        <br/>
+        {{comment.body}}
+        <br/>
+    {% endfor %}
+
+
+{% endif %}
 <br/><br/>
 <a href="{%url 'home' %}"><button type="button" class="btn btn-secondary">Voltar</button></a>
-
-
 {% endblock %}

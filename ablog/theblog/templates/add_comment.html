@@ -1,20 +1,21 @@
 {% extends "base.html" %}
 
 {% block title %}
-    Login
+    Adicionar comentario
 {% endblock title %}
 
 {%block content %}
     
 
-<h1>Login</h1>
+
+<h1>Adicionar comentario</h1>
 <div class="form-group">
 <form method="POST">
     {% csrf_token %}
     {{form.as_p}}
-    <button class="btn btn-secondary">Login</button>
+    <button class="btn btn-secondary">Comentar</button>
 </div>
 
-Novo por aqui? <a href="{%url 'register'%}">Cadastre-se</a>
+
 
 {% endblock %}
