@@ -8,7 +8,12 @@
 
 
 <h1>{{post.title}}</h1>
-<small>By: {{post.author.first_name}} {{post.author.last_name}}</small></br>
+<small>By: {{post.author.first_name}} {{post.author.last_name}}</small>
+{%if user.is_authenticated%}
+    <small><a href="{%url 'update_post' post.pk%}">Editar</a> </small>
+    <small><a href="{%url 'delete_post' post.pk%}">Deletar</a></small>
+{% endif %}
+</br>
 <hr>
 <br/>
 {{post.body}}
