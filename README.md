@@ -1,4 +1,6 @@
 # Django site de receitas
+
+## Autor:
 Nome: João Roizen Fontana - 1710431
 
 ## Sobre:
