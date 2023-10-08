@@ -1,17 +1,17 @@
 # Django site de receitas
 Nome: João Roizen Fontana - 1710431
 
-Sobre:
+##Sobre:
 
 Foi criado um WebSite de receitas, onde os usuários podem compartilhar receitas, ver receitas novas e comentar.
 
-Escopo:
+##Escopo:
 
 O WebSite permite que os usuários vejam receitas salvas de outros usuários e comentem nelas. Além disso, os usuários podem criar uma conta para publicarem suas próprias receitas, podendo editar/atualizar elas e deletar.
 
 Obs: pelo fato de  conter as quatro operações básicas em banco de dados (CRUD) na administração das receitas de cada usuário, onde eles podem criar, editar, deletar e ler as receitas, não foi implementado a parte de edição da conta do usuário, como mudança de senha, a fim de simplificar um pouco pois realizei o projeto sozinho.
 
-Modo de uso:
+###Modo de uso:
 
 O WebSite foi pensado como um local onde usuários vão para conhecer receitas novas e compartilhar, então ao entrar no site a página inicial é um conjunto de todas as receitas, contendo o título dela e o usuário que a criou. Mesmo sem estar logado, é possível ver as receitas e comentar nelas, pois dessa maneira acredito que cumpra da melhor maneira o propósito proposto. 
 
