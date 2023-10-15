@@ -1,7 +1,8 @@
 # Django site de receitas
+Link para o site: http://font.pythonanywhere.com/
 
 ## Autor:
-Nome: João Roizen Fontana - 1710431
+Nome: João Roizen Fontana
 
 ## Sobre:
 
